@@ -1,4 +1,4 @@
-package com.herb.springredisdemo.service;
+package com.herb.springredisdemo.repo;
 
 import com.herb.springredisdemo.entity.Employee;
 import com.herb.springredisdemo.repo.EmployeeDao;
