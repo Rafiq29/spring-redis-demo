@@ -20,6 +20,7 @@ public class MovieService {
     private void init() {
         this.movieDao.save(new MovieModel("1", "Star Wars", MovieModel.FSK.FSK_12, Arrays.asList("Luke", "Darth Vader")));
         this.movieDao.save(new MovieModel("2", "Back to the Future", MovieModel.FSK.FSK_8, Arrays.asList("Doc", "Marty")));
+        this.movieDao.save(new MovieModel("3", "Back", MovieModel.FSK.FSK_8, Arrays.asList("Doc", "Marty", "Dhbs")));
     }
 
     public MovieModel getMovie(String key) {

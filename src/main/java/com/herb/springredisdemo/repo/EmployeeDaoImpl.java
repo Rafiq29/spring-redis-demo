@@ -2,6 +2,7 @@ package com.herb.springredisdemo.repo;
 
 import com.herb.springredisdemo.entity.Employee;
 import com.herb.springredisdemo.repo.EmployeeDao;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.HashOperations;
 import org.springframework.stereotype.Repository;
 
@@ -12,7 +13,7 @@ import java.util.Map;
 public class EmployeeDaoImpl implements EmployeeDao{
     private final String hashReference = "Employee";
 
-    @Resource(name = "redisTemplate")
+    @Resource(name = "redisTemplateEmployee")
     private HashOperations<String, Integer, Employee> hashOperations;
 
     @Override
