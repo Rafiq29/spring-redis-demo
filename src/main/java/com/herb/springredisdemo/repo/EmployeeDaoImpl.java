@@ -13,7 +13,7 @@ import java.util.Map;
 public class EmployeeDaoImpl implements EmployeeDao{
     private final String hashReference = "Employee";
 
-    @Resource(name = "redisTemplateEmployee")
+    @Resource(name = "redisTemplate")
     private HashOperations<String, Integer, Employee> hashOperations;
 
     @Override
